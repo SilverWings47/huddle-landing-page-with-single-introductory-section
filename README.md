@@ -20,7 +20,7 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 
 ### Links
 
-- Live Site URL: [Live site URL](https://comfy-axolotl-d44984.netlify.app/w)
+- Live Site URL: [Live site URL](https://comfy-axolotl-d44984.netlify.app/)
 
 ### Built with
 
