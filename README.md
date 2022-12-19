@@ -20,8 +20,7 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 
 ### Links
 
-- Solution URL: [Github repo](https://github.com/SilverWings47/ping-coming-soon-page)
-- Live Site URL: [Live site URL](https://app.netlify.com/sites/gleeful-valkyrie-5913b3/overview)
+- Live Site URL: [Live site URL](https://comfy-axolotl-d44984.netlify.app/w)
 
 ### Built with
 
