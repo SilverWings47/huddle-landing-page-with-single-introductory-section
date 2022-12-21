@@ -11,7 +11,7 @@ body {
     @include desktop {
         background-image: url('../images/bg-desktop.svg');
         background-size: cover;
-        background-position: 0 0;
+        background-position: -80px;
         
     }
 }
@@ -20,7 +20,7 @@ header {
     padding: 2rem;
 
     @include desktop {
-        padding: 3rem;
+        padding: 4rem;
     }
 
     img {
@@ -37,15 +37,24 @@ header {
     padding: 1.7rem 2.3rem;
 
     @include desktop {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1.3fr 1fr;
         align-items: start;
         gap: 3rem;
-        padding-inline: 3.5rem;
-        margin-top: 2rem;
+        padding-inline: 4rem;
+        padding-bottom: 0;
+        // margin-top: 2rem;
     }
 
     figure {
         margin-bottom: 4rem;
+
+        @include desktop {
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+        }
     }
 }
 
@@ -66,23 +75,24 @@ header {
 
         @include desktop {
             text-align: left;
-            font-size: 2.8rem;
-            max-width: 90%;
-            line-height: 1.25;
+            font-size: 2.5rem;
+            max-width: 85%;
+            line-height: 1.5;
         }
     }
 
     .primary__text {
         font-family: var(--ff-body);
-        color: white;
+        color: rgba(white, .9);
         text-align: center;
         font-weight: var(--fw-body-regular);
+        font-size: 1rem;
+        line-height: 1.5;
 
         @include desktop {
             text-align: left;
-            max-width: 90%;
-            font-size: 1.25rem;
-            line-height: 1.6;
+            font-size: 1.19rem;
+            line-height: 1.5;
             color: rgba(white, .9);
         }
     }
@@ -103,7 +113,10 @@ header {
 
         @include desktop {
             margin: 0;
-            min-width: 10rem;
+            min-width: 13rem;
+            padding-block: .9rem;
+            margin-top: .8rem;
+            font-size: 1.2rem;
         }
 
         &:hover{
@@ -119,7 +132,8 @@ footer {
 
     @include desktop {
         text-align: right;
-        padding-right: 4rem;
+        padding-right: 5rem;
+        margin: 0;
     }
 
     .socials {
@@ -132,13 +146,19 @@ footer {
             justify-content: center;
             align-items: center;
             color: white;
-            font-size: .8rem;
             border: 1px solid white;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
             transition: all .3s ease-in;
             cursor: pointer;
+
+            &::before {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 22px;
+            }
 
             &:hover {
                 color: var(--clr-primary-magenta);
